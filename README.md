@@ -17,7 +17,7 @@ relay setup
 To update:
 
 ```bash
-brew upgrade llm-relay && relay setup
+brew update && brew upgrade llm-relay && relay setup
 ```
 
 The formula is in `Formula/llm-relay.rb`. [docs/releasing.md](https://github.com/broxgit/llm-relay/blob/main/docs/releasing.md) in llm-relay says how it gets a new version.

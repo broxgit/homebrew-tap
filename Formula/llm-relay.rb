@@ -1,8 +1,8 @@
 class LlmRelay < Formula
   desc "Lets Microsoft Copilot Cowork change code it can't reach, through your Mac"
   homepage "https://github.com/broxgit/llm-relay"
-  url "https://github.com/broxgit/llm-relay/archive/refs/tags/v0.2.4.tar.gz"
-  sha256 "73534440644dfa8dab43e7759ad3b9dd95e196d8a23bbb5db961880cda077708"
+  url "https://github.com/broxgit/llm-relay/archive/refs/tags/v0.2.5.tar.gz"
+  sha256 "d0a1b3a4e896dd4014490e6385579d9688ae723ae87e0879bf7e04146df4f6b5"
   license "MIT"
 
   def install
@@ -14,8 +14,8 @@ class LlmRelay < Formula
 
   def caveats
     <<~EOS
-      Run this once, and again after each upgrade, so Copilot Cowork gets the skill:
-        relay setup
+      Run this to begin, and again after each upgrade, so Copilot Cowork gets the skills:
+        relay start
     EOS
   end
 

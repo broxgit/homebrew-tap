@@ -1,13 +1,13 @@
 class LlmRelay < Formula
   desc "Lets Microsoft Copilot Cowork change code it can't reach, through your Mac"
   homepage "https://github.com/broxgit/llm-relay"
-  url "https://github.com/broxgit/llm-relay/archive/refs/tags/v0.2.14.tar.gz"
-  sha256 "909a4dd48d15ba514f27f5595ac5e5a1542e14f767e49f32fc4eefb25dcb0a92"
+  url "https://github.com/broxgit/llm-relay/archive/refs/tags/v0.2.15.tar.gz"
+  sha256 "0dc040ed3a9ec05476a795b82d614f0abb403ab202583a8f18b7636037a6e901"
   license "MIT"
 
   def install
-    # relay.sh finds the skill it installs beside itself, so the two stay together.
-    libexec.install "relay.sh", "cowork"
+    # relay.sh finds the skills it installs beside itself, so they stay together.
+    libexec.install "relay.sh", "cowork", "claude"
     bin.install_symlink libexec/"relay.sh" => "relay"
     generate_completions_from_executable(bin/"relay", "completion", shells: [:bash, :zsh])
   end

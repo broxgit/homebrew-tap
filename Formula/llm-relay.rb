@@ -1,8 +1,8 @@
 class LlmRelay < Formula
   desc "Lets Microsoft Copilot Cowork change code it can't reach, through your Mac"
   homepage "https://github.com/broxgit/llm-relay"
-  url "https://github.com/broxgit/llm-relay/archive/refs/tags/v0.2.22.tar.gz"
-  sha256 "9b8ff83850173bba926f1f0280dfc3a47f0d54262518487daffa195472382a6d"
+  url "https://github.com/broxgit/llm-relay/archive/refs/tags/v0.2.23.tar.gz"
+  sha256 "a593753bad58b550c041745be3b34fc37345c4a90e96aab8f8edb8e544710c30"
   license "MIT"
 
   def install
